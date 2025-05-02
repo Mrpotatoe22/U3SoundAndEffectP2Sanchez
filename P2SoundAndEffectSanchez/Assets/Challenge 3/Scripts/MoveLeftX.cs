@@ -20,7 +20,8 @@ public class MoveLeftX : MonoBehaviour
         // If game is not over, move to the left
         if (!playerControllerScript.gameOver)
         {
-            transform.Translate(Vector3.left * speed * Time.deltaTime, Space.World);
+            transform.Translate(Vector3.left * speed *
+            Time.deltaTime, Space.World);
         }
 
         // If object goes off screen that is NOT the background, destroy it
